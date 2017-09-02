@@ -201,7 +201,7 @@ func (nn *FeedForward) Train(patterns [][][]float64, iterations int, lRate, mFac
 
 		errors[i] = e
 
-		if debug && i%1000 == 0 {
+		if debug && i%100 == 0 {
 			fmt.Println(i, e)
 		}
 	}
